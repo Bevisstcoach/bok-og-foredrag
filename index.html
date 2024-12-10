@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Bedrift</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec;
+            color: #333;
+        }
+        header {
+            background-color: #ff80ab;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f8bbd0;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #fff;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff80ab;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .products img {
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #f8bbd0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #f50057;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #ff80ab;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #f50057;
+        }
+    </style>
+</head>
+<body>
+    <header>Velkommen til min bedrift!</header>
+    <nav>
+        <a href="#about">Om meg</a>
+        <a href="#products">Produkter</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <section id="about">
+        <h2>Om meg</h2>
+        <p>Hei! Jeg er forfatter og foredragsholder. Jeg elsker å dele historier og inspirere mennesker.</p>
+        <img src="https://via.placeholder.com/200" alt="Om meg bilde">
+    </section>
+    <section id="products" class="products">
+        <h2>Produkter</h2>
+        <div>
+            <h3>Boken min</h3>
+            <img src="https://via.placeholder.com/200" alt="Bokbilde">
+            <p>En inspirerende bok for alle som ønsker å oppnå sine mål.</p>
+            <a href="#" class="button">Kjøp nå</a>
+        </div>
+        <div>
+            <h3>Foredrag</h3>
+            <p>Motiverende og engasjerende foredrag for bedrifter og organisasjoner.</p>
+            <a href="#contact" class="button">Bestill foredrag</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Ta kontakt for mer informasjon eller forespørsler!</p>
+        <form>
+            <input type="text" name="name" placeholder="Navn" required>
+            <input type="email" name="email" placeholder="E-post" required>
+            <textarea name="message" placeholder="Din melding" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        © 2024 Min Bedrift - Alle rettigheter reservert
+    </footer>
+</body>
+</html>
